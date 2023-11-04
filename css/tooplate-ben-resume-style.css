@@ -301,6 +301,9 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      HERO                
   -----------------------------------------*/
+  .hero{
+    margin-top:60px;
+  }
 
   .hero-title,
   .email-link {
@@ -329,7 +332,7 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      ABOUT                
   -----------------------------------------*/
-  
+
   .about-third {
 	  margin: 2.2em -0.8em;
   }
