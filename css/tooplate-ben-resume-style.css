@@ -173,15 +173,15 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
 
   .navbar {
-    background: transparent;
+    background: var(--menu-bg-color);
     padding: 0.3rem 1rem;
     transition: all 300ms ease-in-out;
-    position: absolute;
+    position: fixed;
     z-index: 99;
     top: 0;
     right: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
   }
 
   .navbar.scroll {
@@ -296,37 +296,106 @@ https://www.tooplate.com/view/2120-ben-resume
     top: 8px;
   }
 
+  /*WAVE*/
+  .editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    background-color:black;
+    z-index:5;
+    bottom:0;
+    position:absolute;
+    left:0px;
+    float:left;
+  }
+  
+  .parallax1 > use {
+    animation: move-forever1 10s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax2 > use {
+    animation: move-forever2 8s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax3 > use {
+    animation: move-forever3 6s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax4 > use {
+    animation: move-forever4 4s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever4 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
 
 
   /*---------------------------------------
      HERO                
   -----------------------------------------*/
-  .hero{
+  #intro{
     margin-top:60px;
+    padding-top:60px;
+    background:black;
+    background-color: black;
+    border:solid;
+    border-color:black;
   }
 
-  .hero-title,
-  .email-link {
-    background: var(--dark-color);
-    border-radius: var(--border-radius-medium);
-    color: var(--white-color);
-    display: inline-block;
-    margin: 0.5rem 0;
-    padding: 0.5rem 2rem 1.5rem 2rem;
-	font-size: 4em;
+  #introborder{
+    border-style:solid;
+    border-top-color:black;
+    border-right-color:black;
+    border-left-color:black;
+    border-bottom-width:60px;
+    border-bottom-color:var(--primary-color);
   }
 
-  .email-link {
-    background: var(--primary-color);
-    color: var(--dark-color);
-    font-size: 1.8em;
-    padding: 0.5rem 2rem 1rem 2rem;
+  #introtext{
+    width: 400px;
+    height: 500px;
+    text-align: right;
+    color:white;
   }
-
-  .email-link:hover {
-    background: var(--dark-color);
-    color: var(--white-color);
-  }
+  
 
 
   /*---------------------------------------
