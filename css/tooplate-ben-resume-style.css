@@ -373,11 +373,11 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
   #intro{
     margin-top:60px;
-    padding-top:60px;
+    padding-top:55px;
     background:black;
     background-color: black;
-    border:solid;
-    border-color:black;
+    
+    
   }
 
   #introborder{
@@ -390,8 +390,8 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   #introtext{
-    width: 400px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     text-align: right;
     color:white;
   }
@@ -401,9 +401,17 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      ABOUT                
   -----------------------------------------*/
+  #about{
+    padding-top:5em;
+  }
+
+  #about-title{
+    padding-top:2em;
+    padding-bottom:1em;
+  }
 
   .about-third {
-	  margin: 2.2em -0.8em;
+	  padding-top:3em;
   }
 
   .about-image {
