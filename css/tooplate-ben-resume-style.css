@@ -6,6 +6,34 @@ https://www.tooplate.com/view/2120-ben-resume
 
 */
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
   @font-face {
       font-family: 'Plain';
       src: url('../localfonts/Plain-Regular.woff2') format('woff2'),
@@ -373,10 +401,10 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
   #intro{
     margin-top:60px;
-    padding-top:55px;
+    padding-top:60px;
     background:black;
     background-color: black;
-    
+    padding-bottom:30px;
     
   }
 
@@ -406,8 +434,8 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   #about-title{
-    padding-top:2em;
-    padding-bottom:1em;
+    padding-top:1em;
+    
   }
 
   .about-third {
@@ -426,6 +454,14 @@ https://www.tooplate.com/view/2120-ben-resume
     display: inline-block;
     width: 30%;
     margin-right: 1rem;
+  }
+
+  /*---------------------------------------
+     PROJECT              
+  -----------------------------------------*/
+  #project-title{
+    padding-top:3em;
+    
   }
 
 
