@@ -323,6 +323,27 @@ https://www.tooplate.com/view/2120-ben-resume
   .navbar-toggler .navbar-toggler-icon::after {
     top: 8px;
   }
+  /*FADE_IN_ANIMATION*/
+  @keyframes fadeAndScale{
+    0% {
+      opacity: 0;
+      transform: scaled3d(.75,.75,1)
+    }
+    70% {
+      opacity: 0;
+      transform: scale3d(.75,.75,1)
+    }
+    100%{
+      opacity: 1;
+      transform: scaled3d(1,1,1)
+    }
+
+  }
+  .hero .introtext .introimage{
+    animation: fadeAndScale 1s cubic-bezier(.39,-1.05,.58,1.95);
+    animation-delay: -0.2s;
+    transform-origin: center bottom;
+  }
 
   /*WAVE*/
   .editorial {
@@ -407,12 +428,20 @@ https://www.tooplate.com/view/2120-ben-resume
     
   }
 
+  #introimage{
+    animation: fadeAndScale 1s cubic-bezier(.39,-1.05,.58,1.95);
+    animation-delay: -0.2s;
+    transform-origin: center bottom;
+  }
 
   #introtext{
     width: 600px;
     height: 600px;
     text-align: right;
     color:white;
+    animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
+    animation-delay: -0.2s;
+    transform-origin: center bottom;
   }
   
 
