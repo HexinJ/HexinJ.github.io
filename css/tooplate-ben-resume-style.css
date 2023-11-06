@@ -334,6 +334,7 @@ https://www.tooplate.com/view/2120-ben-resume
     z-index:5;
     bottom:0;
     position:absolute;
+    top: 700px;
     left:0px;
     float:left;
   }
@@ -399,23 +400,13 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      HERO                
   -----------------------------------------*/
+  
   #intro{
-    margin-top:60px;
-    padding-top:60px;
-    background:black;
+    padding-top:120px;
     background-color: black;
-    padding-bottom:30px;
     
   }
 
-  #introborder{
-    border-style:solid;
-    border-top-color:black;
-    border-right-color:black;
-    border-left-color:black;
-    border-bottom-width:60px;
-    border-bottom-color:var(--primary-color);
-  }
 
   #introtext{
     width: 600px;
