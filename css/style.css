@@ -83,6 +83,11 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
+
+#colorlib-aside::-webkit-scrollbar {
+  display: none;
+}
+
   @media screen and (max-width: 768px) {
     #colorlib-aside {
       width: 300px;
